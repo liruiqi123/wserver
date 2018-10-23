@@ -11,11 +11,8 @@ class Login
     }
 
     public function dologin(){
-         $code =  input('get.code');/*获取前端传过来的code*/
 
          Log::write('测试日志信息，这是警告级别，并且实时写入','notice');
-
-         Log::write($code);
 
          $param = input('param');
 
