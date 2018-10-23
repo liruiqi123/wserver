@@ -13,6 +13,5 @@ class Login
          $code =  input('get.code');/*获取前端传过来的code*/
          return($code);
 
-
     }
 }
