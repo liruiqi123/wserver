@@ -15,11 +15,11 @@ return [
     // 服务器地址
     'hostname'        => '127.0.0.1',
     // 数据库名
-    'database'        => '',
+    'database'        => 'wserver',
     // 用户名
-    'username'        => 'root',
+    'username'        => 'test',
     // 密码
-    'password'        => '',
+    'password'        => 'test',
     // 端口
     'hostport'        => '',
     // 连接dsn
