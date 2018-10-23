@@ -1,5 +1,6 @@
 <?php
 namespace app\user\controller;
+use \think\Log;
 
 class Login
 {
@@ -11,6 +12,11 @@ class Login
 
     public function dologin(){
          $code =  input('get.code');/*获取前端传过来的code*/
+
+         Log::write('测试日志信息，这是警告级别，并且实时写入','notice');
+
+         Log::write($code);
+
          if(!$code){
                 ajaxReturn(['code' => 40000, 'msg'=>'code不能为空']);
          }else{
