@@ -15,7 +15,6 @@ class Login
 
     public function dologin(){
 
-         Log::write('测试日志信息，这是警告级别，并且实时写入','notice');
 
          $param = input('param');
 
@@ -32,7 +31,7 @@ class Login
              'city'  => input('param.city'),
              'country'  =>  input('param.coutry'),
              'gender'  =>  input('param.sex'),
-             'language'  =>  ''),
+             'language'  =>  '',
              'nickName'  =>  input('param.nick_name'),
              'province'  =>  input('param.province')
          ]);
@@ -40,7 +39,7 @@ class Login
 
          $result = $userLoginInfo->save();
 
-
+         Log::write('测试日志信息','更新用户记录情况:',$result);
 
 
          if(!$result){
