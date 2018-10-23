@@ -39,7 +39,7 @@ class Login
 
          $result = $userLoginInfo->save();
 
-         Log::write('测试日志信息','更新用户记录情况:',$result);
+         Log::write('测试日志信息','更新用户记录情况:$result');
 
 
          if(!$result){
