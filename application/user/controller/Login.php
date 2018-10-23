@@ -10,8 +10,7 @@ class Login
     }
 
     public function dologin(){
-         $post_data = I('post.');
-         $code =  I('post.code/s');/*获取前端传过来的code*/
+         $code =  input('get.code');/*获取前端传过来的code*/
          return($code);
 
 
