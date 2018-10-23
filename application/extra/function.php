@@ -2,7 +2,7 @@
     /**
     * 公共方法
     */
-        public  function ajaxReturn($data,$type='',$json_option=0) {
+          function ajaxReturn($data,$type='',$json_option=0) {
                 //if(empty($type)) $type  =   C('DEFAULT_AJAX_RETURN');
                 if(empty($type)) $type  =   "JSON";
                 switch (strtoupper($type)){
