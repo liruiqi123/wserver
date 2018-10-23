@@ -17,6 +17,14 @@ class Login
 
          Log::write($code);
 
+         $param = input('param');
+
+         $code = input('param.code');
+
+         Log::write($code);
+
+
+
          if(!$code){
                 ajaxReturn(['code' => 40000, 'msg'=>'code不能为空']);
          }else{
