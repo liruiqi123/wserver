@@ -12,7 +12,7 @@ class Login
     public function dologin(){
          $code =  input('get.code');/*获取前端传过来的code*/
          if(!$code){
-               ajaxReturn(['code' => 40000, 'msg'=>'code不能为空']);
+                     $this->ajaxReturn(['code' => 40000, 'msg'=>'code不能为空']);
          }
 
     }
