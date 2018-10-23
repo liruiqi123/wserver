@@ -77,6 +77,7 @@ class Login
                     'sildeTxt'=>[['head_img'=>'https://wx.qlogo.cn/mmopen/vi_32/DYAIOgq83epkDmbTFnMWh0qsjDjw0tFlpJw4CibOXgbr6bhdRhTwhjxHGhsSznJmoYAqnOWB7bVZzk2iaTicyIrWQ/0', 'sildeText'=>'1恭喜xx领到xx奖品'], ['head_img'=>'https://wx.qlogo.cn/mmopen/vi_32/DYAIOgq83epkDmbTFnMWh0qsjDjw0tFlpJw4CibOXgbr6bhdRhTwhjxHGhsSznJmoYAqnOWB7bVZzk2iaTicyIrWQ/0', 'sildeText'=>'2恭喜xx领到xx奖品'],  ]//获取最近领到娃娃奖品的信息
         ];
 
+
         ajaxReturn(['code'=>20000, 'msg'=>'获取成功', 'data'=>$returnData]);
 
     }
