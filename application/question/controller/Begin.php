@@ -39,14 +39,14 @@ class Begin
                     }
                 }
 
-                $this->ajaxReturn ( [
+                ajaxReturn ( [
                     'code' => 20000,
                     'msg' => '获取成功',
                     'quests' => $quests,
                 ]);
 
             }catch (Exception $e){
-                $this->ajaxReturn ( [
+                ajaxReturn ( [
                     'code' => 40500,
                     'msg' => '数据异常',
                     'quests' => $quests,
