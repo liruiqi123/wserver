@@ -64,7 +64,7 @@ class Begin
              * 在每局答题前，可通过该方法尽心处理
              */
             public function getGameFlag(){
-                $this->ajaxReturn ( [
+                ajaxReturn ( [
                     'code' => 20000,
                     'msg' => '获取成功',
                     'flag' => 'flag',
