@@ -25,7 +25,7 @@ class Result
 
 
 
-        $this->ajaxReturn(['code'=>20000, 'msg'=>'操作成功', 'is_pass' =>$is_pass, 'challengeId'=>111, 'prize'=>['src'=>'11111111', 'text'=>'111111111111']  ]);
+        ajaxReturn(['code'=>20000, 'msg'=>'操作成功', 'is_pass' =>$is_pass, 'challengeId'=>111, 'prize'=>['src'=>'11111111', 'text'=>'111111111111']  ]);
     }
 
 }
