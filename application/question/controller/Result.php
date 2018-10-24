@@ -21,8 +21,7 @@ class Result
         Log::write('测试日志信息',$is_pass );
         Log::write('测试日志信息',$use_revive_time );
         Log::write('测试日志信息',$share_revive_time );
-        Log::write('测试日志信息',$this->user_id);
-        Log::write('测试日志信息',$this->openid);
+
 
 
 
