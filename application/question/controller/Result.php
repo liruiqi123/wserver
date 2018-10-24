@@ -12,9 +12,9 @@ class Result
      */
     public function dealResult(){
 
-        $is_pass = I('post.is_pass/d');
-        $use_revive_time = I('post.money/d');
-        $share_revive_time = I('post.share_revive_time/d');
+        $is_pass = input('post.is_pass/d');
+        $use_revive_time = input('post.money/d');
+        $share_revive_time = input('post.share_revive_time/d');
 
 
         Log::write('测试日志信息','---------------------');
