@@ -2,7 +2,7 @@
 namespace app\question\controller;
 
 
-use app\questions\model\Questions;
+use app\question\model\Questions;
 
 class Begin
 {
