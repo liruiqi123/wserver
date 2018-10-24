@@ -2,6 +2,9 @@
 namespace app\question\controller;
 
 
+use \think\Log;
+
+
 use app\question\model\Questions;
 
 class Begin
