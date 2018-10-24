@@ -1,6 +1,9 @@
 <?php
 namespace app\question\controller;
 
+
+use app\questions\model\Questions;
+
 class Begin
 {
     public function index()
@@ -11,26 +14,16 @@ class Begin
 
     public function startGame() {
             try {
+                $questions = new Questions;
 
-                $questModel = M('questions');
-                //获取题库数量
-                $questions = S('questions');
-                //$questions = null;
-                if (empty($questions)) {
-                    $questions = $questModel->where(['del'=>0])->select();
-                    S('questions', $questions, 3600);
-                }
-
-                if ($num > count($questions)) {
-                    throw_exception('题库数量不足');
-                }
+                $questions = $questModel->where(['del'=>0])->select();
 
                 $amount = count($questions);
                 //随机五个题目的id
                 $i = 0;
                 $ids = [];
                 $quests = [];
-                while ($i < $num){
+                while ($i < 5){
                     $rid = mt_rand(1, $amount) - 1;
                     if (!in_array($rid, $ids)) {
                         $ids[] = $rid;
