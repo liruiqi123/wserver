@@ -14,11 +14,15 @@ class Begin
 
     public function startGame() {
             try {
-                $questions = new Questions;
+                $questionsModel = new Questions;
 
-                $questions = $questModel->where(['del'=>0])->select();
+                $questions = $questionsModel->where(['del'=>0])->select();
 
                 $amount = count($questions);
+
+                Log::write('测试日志信息','---------------------');
+                Log::write('测试日志信息',$amount);
+
                 //随机五个题目的id
                 $i = 0;
                 $ids = [];
