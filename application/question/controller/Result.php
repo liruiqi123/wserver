@@ -23,8 +23,6 @@ class Result
         Log::write('测试日志信息',$share_revive_time );
 
 
-
-
         ajaxReturn(['code'=>20000, 'msg'=>'操作成功', 'is_pass' =>$is_pass, 'challengeId'=>111, 'prize'=>['src'=>'11111111', 'text'=>'111111111111']  ]);
     }
 
